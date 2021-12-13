@@ -6,10 +6,10 @@ const ip = {
 const values = {
   port : "1228",
   enableSSH: false,
-  mongoUrl : `mongodb://dbuser:secretpassword@${ip.local}:27018/`,
+  mongoUrl : `mongodb://dbuser:secretpassword@[ip.local]:27017/`,
   mongoDbName : "stevia",
   mongoCollection : "event1s",
-  pgUrl = `postgresql://dbuser:secretpassword@${ip.local}:3211/mydb`,
+  //pgUrl = `postgresql://dbuser:secretpassword@[ip.local]:3211/mydb`,
   sshConf: {
     username:'sshUser',
     password:'secretpassword',
