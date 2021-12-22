@@ -6,16 +6,16 @@ const ip = {
 const values = {
   port : "1228",
   enableSSH: false,
-  mongoUrl : `mongodb://dbuser:secretpassword@[ip.local]:27017/`,
+  mongoUrl : `mongodb://MONGOUSER:MONGOPASS@172.16.2.30:27017/`,
   mongoDbName : "stevia",
   mongoCollection : "event1s",
-  //pgUrl = `postgresql://dbuser:secretpassword@[ip.local]:3211/mydb`,
+  //pgUrl = `postgresql://MONGOUSER:MONGOPASS@172.16.2.30:3211/mydb`,
   sshConf: {
-    username:'sshUser',
-    password:'secretpassword',
-    host:ip.external,
+    username:'SSHUSER',
+    password:'SSHPASS',
+    host:publicIP,
     port:22,
-    dstHost:ip.external,
+    dstHost:publicIP,
     dstPort:27017,
     localHost:'127.0.0.1',
     localPort: 27000
