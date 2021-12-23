@@ -6,7 +6,7 @@ const ip = {
 const values = {
   port: 1228,
   enableSSH: false,
-  mongoUrl: `mongodb://admin:jarkoM@172.16.2.50:27017/`,
+  mongoUrl: `mongodb://admin:jarkoM@172.16.2.80:27017/`,
   mongoDbName: "stevia",
   mongoCollection: "event1s",
   pgUrl: `postgresql://dbuser:secretpassword@172.16.2.80:3211/mydb`,
